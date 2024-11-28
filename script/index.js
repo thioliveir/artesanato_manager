@@ -1,0 +1,1 @@
+import "./layout.js"; // Import layout.js - utilizar o type="module" no script do HTML

@@ -1,0 +1,194 @@
+#app {
+    #main-content {
+        #material-content {
+            padding: 0 20px;
+            h2 {
+                font: var(--title-md);
+                color: var(--title-form);
+            }
+    
+            & form {
+                margin-bottom: 1rem;
+                
+                & fieldset {
+                    padding: 1rem;
+                    margin-bottom: 1rem;
+            
+                    & legend {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 1rem;
+                        margin-left: 1rem;
+                        
+                        & svg {
+                            width: 3rem;
+                            height: 3rem;
+                            margin-right: 10px;
+                            fill: var(--title-legend);
+                        }
+            
+                        & h3 {
+                            font: var(--title-sm);
+                            color: var(--title-legend);
+                        }
+                    }
+                    
+                    & > div:first-of-type {
+                        display: flex;
+                        align-items: flex-end;
+                        gap: 1rem;
+        
+                        & .input-wrapper {
+                            width: 30rem;
+                            display: flex;
+                            gap: .75rem;
+
+                            & label {
+                                display: block;
+                                color: var(--title-label);
+                            }
+
+                            & input {
+                                padding: .5rem 1rem;
+                                font: var(--text-sm);
+                                background-color: var(--bg-menu);
+                                color: var(--text-menu);
+                                outline: 1px solid transparent;
+                                
+                    
+                                &::placeholder {
+                                    color: var(--text-menu);
+                                }
+                    
+                                &:focus, &:focus-within {
+                                    border: 1px solid var(--shape-color);
+                                    outline: 1px solid var(--shape-color);
+                                }
+                    
+                            }
+                        }
+
+                        & .input-file {
+                            width: 23rem;
+                            align-self: flex-end;
+                            
+
+                            & > label:first-of-type {
+                                display: block;
+                                color: var(--title-label);
+                                margin-bottom: .75rem;
+                            }
+
+                            & > div:first-of-type {
+                                display: flex;
+                                align-items: center;
+                                gap: .75rem;
+
+                                & label {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: .75rem;
+                                    background-color: var(--bg-menu);
+                                    padding: .2rem .85rem;
+                                    color: var(--text-menu);
+                                    font-weight: 600;
+                                    border-radius: .5rem;
+                                    cursor: pointer;
+                                    transition: background-color .3s;
+
+                                    & svg {
+                                        width: 2rem;
+                                        height: 2rem;
+                                    }
+
+                                    
+                                    &:hover {
+                                        background-color: var(--shape-color);
+                                        color: var(--title-legend);
+                                        
+                                        & svg {
+                                            fill: var(--title-legend);
+                                        }
+                                    }
+                                }
+                                
+                                & input:focus {
+                                    border: 1px solid var(--shape-color);
+                                    outline: 1px solid var(--shape-color);
+                                }
+                                & input[type="file"]::-webkit-file-upload-button {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+            
+            
+            
+
+                }
+            }
+        
+        
+            .material-registered { 
+                
+                & header {
+                    display: flex;
+                    justify-content: end;
+                    height: 0;
+                    
+                    & p {
+                        font: var(--text-md);
+                        color: var(--title-label);
+                    }
+                }
+    
+                ul {
+                    width: 100%;
+                    max-height: 31.25rem;
+                    border: 1px solid #a9acaf;
+                    padding: 1rem 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    gap: .75rem;
+                    overflow: scroll;
+                    
+                    & .material-info {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        background-color: var(--bg-menu);
+                        border-radius: .5rem;
+                        padding: .5rem;
+    
+                        & img {
+                            width: 2rem;
+                            height: 2rem;
+                        }
+    
+                        & div {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            color: var(--text-menu);
+    
+                            & strong {
+                                font-weight: 900;
+                            }
+                        }
+
+                        & div:nth-child(3) {
+                            & img {
+                                align-self: center;
+                            }
+                        }
+    
+                        & .remove-icon {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

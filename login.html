@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- PreLoad Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuarquiai Ateliê - Login</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!-- CSS -->
+     <link rel="stylesheet" href="style/login.css">
+</head>
+<body>
+    <main>
+        <section id="login">
+
+            <h1>Sistema de Gestão de Artesanato</h1>
+
+            <div class="alert">
+                <div id="user-invalid">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24l0 112c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-112c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/>
+                    </svg>
+                    <p>Nome de usuário ou senha incorretos.</p>
+                </div>
+    
+                <div id="user-register">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24l0 112c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-112c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/>
+                    </svg>
+                    <p>Usuário não cadastro, efetue o cadastro</p>
+                </div>
+
+                <div id="different-password">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24l0 112c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-112c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/>
+                    </svg>
+                    <p>A senha deve ser a mesma em ambos os campos</p>
+                </div>
+
+                <div id="all-inputs">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24l0 112c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-112c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/>
+                    </svg>
+                    <p>Preencha todos os campos antes de enviar</p>
+                </div>
+
+                <div id="password-invalid">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24l0 112c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-112c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/>
+                    </svg>
+                    <p>A senha deve conter no mínimo 8 caracteres, um número e um caractere especial</p>
+                </div>
+            </div>
+
+
+            <div class="login-container">
+                <form action="" method="post" enctype="multipart/form-data" id="login-form">
+                    <fieldset>
+                        <legend>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M406.5 399.6C387.4 352.9 341.5 320 288 320l-64 0c-53.5 0-99.4 32.9-118.5 79.6C69.9 362.2 48 311.7 48 256C48 141.1 141.1 48 256 48s208 93.1 208 208c0 55.7-21.9 106.2-57.5 143.6zm-40.1 32.7C334.4 452.4 296.6 464 256 464s-78.4-11.6-110.5-31.7c7.3-36.7 39.7-64.3 78.5-64.3l64 0c38.8 0 71.2 27.6 78.5 64.3zM256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-272a40 40 0 1 1 0-80 40 40 0 1 1 0 80zm-88-40a88 88 0 1 0 176 0 88 88 0 1 0 -176 0z"/>
+                            </svg>
+                            <h3>Login</h3>
+                        </legend>
+                        <div class="input-wrapper">
+                            <label for="login-email">Login</label>
+                            <input type="email" placeholder="Digite seu e-mail" id="login-email" name="login-email">
+                            <img src="Assets/icons/email.svg" alt="icone de email" class="icon">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="login-password">Senha</label>
+                            <input type="password" placeholder="Digite sua senha" id="login-password" name="login-password">
+                            <button class="password-toggle" type="button" onclick="togglePassword('login-password', 'show-password', 'hidden-password')">
+                                <img src="Assets/icons/show-password.svg" alt="Mostrar Senha" id="show-password" class="icon">
+                                <img src="Assets/icons/hiden-password.svg" alt="Esconder Senha" id="hidden-password" class="icon" style="display: none">
+                            </button>
+                        </div>
+                        <a href="#" class="forgot-password">Esqueceu a senha?</a>
+                    </fieldset>
+                    <button type="submit">Entrar</button>
+                </form>
+                <p class="login-switch"> Não tem uma conta?
+                    <button id="button-register">Cadastra-se</button>
+                </p>
+            </div>
+
+            <div class="register-container">
+                <form action="" method="post" enctype="multipart/form-data" id="register-form">
+                    <fieldset>
+                        <legend>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M528 160l0 256c0 8.8-7.2 16-16 16l-192 0c0-44.2-35.8-80-80-80l-64 0c-44.2 0-80 35.8-80 80l-32 0c-8.8 0-16-7.2-16-16l0-256 480 0zM64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l448 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zM272 256a64 64 0 1 0 -128 0 64 64 0 1 0 128 0zm104-48c-13.3 0-24 10.7-24 24s10.7 24 24 24l80 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-80 0zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24l80 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-80 0z"/></svg>
+                            <h3>Cadastrar</h3>
+                        </legend>
+                        <div class="input-wrapper">
+                            <label for="name">Nome</label>
+                            <input type="text" placeholder="Digite seu Nome" id="name" name="name">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="register-email">E-mail</label>
+                            <input type="email" placeholder="Digite seu e-mail" id="register-email" name="register-email">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="">Cargo</label>
+                            <select name="position" id="position">
+                                <option value="" disabled selected hidden>Selecione</option>
+                                <option value="Manage">Administradora</option>
+                                <option value="Assistant">Auxiliar</option>
+                            </select>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="new-password">Crie a Senha</label>
+                            <input type="password" placeholder="Digite sua senha" id="new-password" name="new-password" oninput="checkPasswordRequirements()">
+                            <button class="password-toggle" type="button" onclick="togglePassword('new-password', 'show-password-new', 'hidden-password-new')">
+                                <img src="Assets/icons/show-password.svg" alt="Mostrar Senha" id="show-password-new" class="icon">
+                                <img src="Assets/icons/hiden-password.svg" alt="Esconder Senha" id="hidden-password-new" class="icon" style="display: none">
+                            </button>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="repeat-password">Confirme a Senha</label>
+                            <input type="password" placeholder="Digite sua senha" id="repeat-password" name="repeat-password">
+                            <button class="password-toggle" type="button" onclick="togglePassword('repeat-password', 'show-password-repeat', 'hidden-password-repeat')">
+                                <img src="Assets/icons/show-password.svg" alt="Mostrar Senha" id="show-password-repeat" class="icon">
+                                <img src="Assets/icons/hiden-password.svg" alt="Esconder Senha" id="hidden-password-repeat" class="icon" style="display: none">
+                            </button>
+                        </div>
+                        <ul class="passwordRequeriments">
+                            <li class="passwordRequeriments-item">
+                                <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path class="password-list-icon" fillrule="evenodd" clipe-rule="evenodd" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+                                No mínimo 8 caracteres
+                            </li>
+                            <li class="passwordRequeriments-item">
+                                <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path class="password-list-icon" fillrule="evenodd" clipe-rule="evenodd" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+                                No mínimo um número (0-9)
+                            </li>
+                            <li class="passwordRequeriments-item">
+                                <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path class="password-list-icon" fillrule="evenodd" clipe-rule="evenodd" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+                                No mínimo um caractere especial
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <button type="submit">Cadastrar</button>
+                </form>
+                <p class="register-switch"> Já tem uma conta?
+                    <button id="button-login">Login</button>
+                </p>
+            </div>
+
+
+
+
+
+
+        </section>
+        <section id="logo">
+            <img src="Assets/img/logo-removebg.png" alt="Logomarca">
+            <span>Atêlie</span>
+        </section>
+    </main>
+    
+    <script src="script/login.js"></script>
+</body>
+</html>

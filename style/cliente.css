@@ -1,0 +1,161 @@
+#app {
+    #client-content {
+        padding: 0 20px;
+        h2 {
+            font: var(--title-md);
+            color: var(--title-form);
+        }
+
+        & form {
+            margin-bottom: 1rem;
+            & fieldset {
+                padding: 1rem;
+                margin-bottom: 1rem;
+        
+                & legend {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 1rem;
+                    margin-left: 1rem;
+                    
+                    & svg {
+                        width: 3rem;
+                        height: 3rem;
+                        margin-right: 10px;
+                        fill: var(--title-legend);
+                    }
+        
+                    & h3 {
+                        font: var(--title-sm);
+                        color: var(--title-legend);
+                    }
+                }
+        
+                & label {
+                    display: block;
+                    color: var(--title-label);
+                }
+        
+                & input {
+                    padding: .5rem 1rem;
+                    font: var(--text-sm);
+                    background-color: var(--bg-menu);
+                    color: var(--text-menu);
+                    outline: 1px solid transparent;
+                    
+        
+                    &::placeholder {
+                        color: var(--text-menu);
+                    }
+        
+                    &:focus, &:focus-within {
+                        border: 1px solid var(--shape-color);
+                        outline: 1px solid var(--shape-color);
+                    }
+        
+                }
+        
+                &.name-form {
+                    & div {
+                        display: grid;
+                        align-items: center;
+                        grid-template-columns: 2fr 1fr 1fr;
+                        gap: 1rem;
+        
+                        & .input-wrapper {
+                            display: flex;
+                            gap: .75rem;
+                        }
+                    }
+                }
+        
+                &.adress-form {
+                    & legend {
+                        & svg {
+                            width: 2.5rem;
+                            height: 2.5rem;
+                        }
+                    }
+        
+                    .input-wrapper {
+                        display: flex;
+                        align-items: center;
+                        gap: .75rem;
+                    }
+        
+                    & > div:first-of-type {
+                        width: 9.375rem;
+                        margin-bottom: 1rem;
+                    }
+        
+                    & > div:last-of-type {
+                        display: grid;
+                        align-items: center;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        gap: 1rem;
+        
+                        & > div:nth-of-type(1) {
+                            grid-column: span 2;
+                        }
+                    }
+                }
+            }
+        }
+    
+    
+        .client-registered {
+            
+            
+            & header {
+                display: flex;
+                justify-content: end;
+                height: 0;
+                
+                & p {
+                    font: var(--text-md);
+                    color: var(--title-label);
+                }
+            }
+
+            ul {
+                width: 100%;
+                max-height: 31.25rem;
+                border: 1px solid #a9acaf;
+                padding: 1rem 1rem;
+                display: flex;
+                flex-direction: column;
+                gap: .75rem;
+                overflow: scroll;
+                
+                & .client-info {
+                    display: flex;
+                    justify-content: space-between;
+                    background-color: var(--bg-menu);
+                    border-radius: .5rem;
+                    padding: .5rem;
+
+                    & img {
+                        width: 2rem;
+                        height: 2rem;
+                    }
+
+                    & div {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        color: var(--text-menu);
+
+                        & strong {
+                            font-weight: 900;
+                        }
+                    }
+
+                    & .remove-icon {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+}

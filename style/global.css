@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: linear-gradient(90deg, rgba(89,146,161,1) 0%, rgba(210,129,151,1) 100%);
+    --bg-brand: #F2EEEE;
+    --bg-menu: #a5a1a1;
+    --shape-color: #212427;
+    --input-base: #1C1f21;
+    --input-stroke: #363B40;
+    --input-placeholder: #869198;
+    --brand-light: #59B2FF;
+    --brand-mid: #3487CF;
+    --brand-dark: #1D6FB6;
+    --brand-danger: #FF5959;
+    --shape-button: #2D3136;
+    --shape-button-hover: #383D42;
+    --text-body: #C8CDD0;
+    --text-menu: #e3e6e8;
+    --text-heading: #F9F9F9;
+    --title-form: #a7abad;
+    --title-legend: #787d7f;
+    --title-label: #8a8e91;
+
+    --ff-leckerli: "Leckerli One", cursive;
+    --ff-baloo: "Baloo 2", sans-serif;
+    --ff-sans: "Open Sans", sans-serif;
+
+    --text-logo: 400 2.5rem var(--ff-leckerli);
+    --title-md: 700 1.75rem var(--ff-baloo);
+    --title-sm: 700 1.125rem var(--ff-baloo);
+    --text-md: 400 1rem var(--ff-sans);
+    --text-sm: 400 0.875rem var(--ff-sans);
+    --text-xs: 400 0.75rem var(--ff-sans);
+}
+
+body {
+    background: var(--bg-color);
+    font: var(--text-md);
+    color: var(--text-body);
+}
+
+input, select {
+    appearance: none;
+    width: 100%;
+    border-radius: .5rem;
+    padding: .81rem 1rem;
+    outline: 1px solid var(--input-stroke);
+    border: 1px solid transparent;
+    font: var(--text-md);
+    color: var(--text-heading);
+    background-color: var(--input-base);
+
+    &::placeholder {
+        color: var(--input-placeholder);
+    }
+
+    &:focus, &:focus-within {
+        border: 1px solid var(--brand-light);
+    }
+
+    &:required:valid {
+        border: 1px solid var(--brand-light);
+    }
+    &:invalid {
+        border: 1px solid var(--brand-danger);
+    }
+}
+
+input[type="file"], input[type="file"]:focus, input[type="file"]:focus-within {
+    all: unset;
+    color: var(--title-legend);
+    width: 100%;
+}  
+
+select:invalid {
+    color: var(--input-placeholder);
+}
+label {
+    font: var(--text-sm);
+    color: var(--text-body);
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font: var(--text-xs);
+}
+
+@media screen and (max-width: 64em) {
+    :root {
+        --title-md: 700 1rem var(--ff-baloo);
+        --text-sm: 400 0.65rem var(--ff-sans);
+        --text-xs: 400 0.55rem var(--ff-sans);
+    }
+
+    input, select {
+        padding: .7rem .8rem;
+        font: var(--text-xs);
+    }
+}
+
+@media screen and (max-width: 24.375em) {
+    :root {
+        --title-sm: 700 .8rem var(--ff-baloo);
+    }
+
+    input, select {
+        padding: .6rem .7rem;
+    }
+}
+

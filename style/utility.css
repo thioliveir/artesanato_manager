@@ -1,0 +1,35 @@
+button[type="submit"] {
+    width: 20rem;
+    padding: .75rem 1.5rem;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    font: var(--text-md);
+    color: var(--text-heading);
+    font-weight: 600;
+    background: var(--brand-dark);
+    transition: background .2s;
+
+    &:hover {
+        background: var(--brand-mid);
+    }
+}
+
+.password-toggle {
+    background: none;
+    cursor: pointer;
+    border: none;
+
+    .icon {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 64em) {
+    button[type="submit"] {
+        width: 15rem;
+        padding: .65rem 1rem;
+        font: var(--text-sm);
+    }
+}
